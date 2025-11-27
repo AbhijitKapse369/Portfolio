@@ -1,0 +1,41 @@
+/* While Tailwind handles almost everything, we can use this file for 
+   animation utilities if we didn't want to use the script config in HTML.
+   Since we added them in index.html, this file can remain minimal or empty.
+*/
+
+/* Smooth Scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Helper to ensure mobile menu transition feels nice */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Delay utilities that Tailwind doesn't have by default */
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+/* Custom Scrollbar for Chrome/Safari/Webkit */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
